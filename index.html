@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menara v7.6 - Ultimate Global Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-subh">
+    <header class="hero">
+      <div class="hero__overlay"></div>
+      <nav class="topbar">
+        <div class="brand">
+          <span class="material-symbols-outlined">mosque</span>
+          <div>
+            <p class="brand__title">Menara</p>
+            <p class="brand__subtitle" data-i18n="tagline">Ultimate Global Edition</p>
+          </div>
+        </div>
+        <div class="topbar__controls">
+          <div class="pill">
+            <span class="material-symbols-outlined">translate</span>
+            <select id="languageSelect" aria-label="Language"></select>
+          </div>
+          <div class="pill">
+            <span class="material-symbols-outlined">palette</span>
+            <select id="themeSelect" aria-label="Theme"></select>
+          </div>
+          <button class="icon-button" id="ramadanToggle" type="button">
+            <span class="material-symbols-outlined">nightlight</span>
+          </button>
+        </div>
+      </nav>
+      <div class="hero__content">
+        <div class="hero__left">
+          <p class="hero__eyebrow" data-i18n="eyebrow">Menara v7.6</p>
+          <h1 data-i18n="heroTitle">De ultieme digitale minaret voor elke dag.</h1>
+          <p class="hero__lead" data-i18n="heroLead">
+            Een serene, wereldwijde ervaring voor gebedstijden, Qur'an, adhkar en community updates.
+          </p>
+          <div class="hero__actions">
+            <button class="primary" type="button" data-i18n="ctaPrimary">Start Focus Modus</button>
+            <button class="ghost" type="button" data-i18n="ctaSecondary">Bekijk Demo</button>
+          </div>
+          <div class="hero__highlights">
+            <div class="highlight">
+              <span class="material-symbols-outlined">schedule</span>
+              <p data-i18n="highlightPrayer">Next prayer in 00:42:18</p>
+            </div>
+            <div class="highlight">
+              <span class="material-symbols-outlined">calendar_month</span>
+              <p data-i18n="highlightHijri">15 Sha'ban 1447 AH</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero__right">
+          <div class="glass card">
+            <h3 data-i18n="nowPlaying">Qur'an Player - Focus</h3>
+            <div class="verse">
+              <p class="verse__arabic">ٱللَّهُ نُورُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ</p>
+              <p class="verse__latin">Allāhu nūru s-samāwāti wa-l-arḍ</p>
+              <p class="verse__translation" data-i18n="verseTranslation">
+                Allah is het Licht van de hemelen en de aarde.
+              </p>
+            </div>
+            <div class="player__controls">
+              <button class="icon-button" type="button">
+                <span class="material-symbols-outlined">skip_previous</span>
+              </button>
+              <button class="icon-button icon-button--primary" type="button">
+                <span class="material-symbols-outlined">play_arrow</span>
+              </button>
+              <button class="icon-button" type="button">
+                <span class="material-symbols-outlined">skip_next</span>
+              </button>
+              <div class="volume">
+                <span class="material-symbols-outlined">volume_up</span>
+                <input type="range" min="0" max="100" value="70" />
+              </div>
+            </div>
+            <div class="chips">
+              <span class="chip" data-i18n="chipModeFocus">👁️ Focus</span>
+              <span class="chip" data-i18n="chipModeSurah">📜 Surah</span>
+              <span class="chip" data-i18n="chipModeAudio">🔊 Audio</span>
+            </div>
+          </div>
+          <div class="glass card agenda">
+            <div class="agenda__header">
+              <h3 data-i18n="agendaTitle">Gebedstijden</h3>
+              <span class="badge" data-i18n="agendaLocation">Rotterdam, NL</span>
+            </div>
+            <ul>
+              <li><span>Fajr</span><strong>05:14</strong></li>
+              <li><span>Dhuhr</span><strong>13:22</strong></li>
+              <li><span>Asr</span><strong>17:03</strong></li>
+              <li><span>Maghrib</span><strong>20:45</strong></li>
+              <li><span>Isha</span><strong>22:05</strong></li>
+            </ul>
+            <div class="agenda__footer">
+              <span class="material-symbols-outlined">location_on</span>
+              <p data-i18n="gpsNote">GPS precisie actief</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="glass feature-grid">
+        <div class="feature">
+          <span class="material-symbols-outlined">language</span>
+          <h3 data-i18n="featureLanguages">5 talen + RTL</h3>
+          <p data-i18n="featureLanguagesDesc">
+            Wissel direct tussen Nederlands, Engels, Frans, Duits en Arabisch met automatische RTL-lay-out.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="material-symbols-outlined">auto_awesome</span>
+          <h3 data-i18n="featureAutomation">Slimme automatisering</h3>
+          <p data-i18n="featureAutomationDesc">
+            Ramadan-, Jumu'ah- en Salah Focus-modi reageren op datum en gebedstijden.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="material-symbols-outlined">headphones</span>
+          <h3 data-i18n="featureAudio">Audio Studio</h3>
+          <p data-i18n="featureAudioDesc">
+            Muezzin-selectie, achtergrondaudio en een elegante equalizer voor de Qur'an-speler.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="material-symbols-outlined">style</span>
+          <h3 data-i18n="featureThemes">Premium thema's</h3>
+          <p data-i18n="featureThemesDesc">
+            Subh, Layl, Sahara en Royal voor elke sfeer, inclusief glassmorphism panels.
+          </p>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <div class="glass widget">
+          <div class="widget__header">
+            <h3 data-i18n="widgetAdhkarTitle">Dagelijkse adhkar</h3>
+            <span class="badge" data-i18n="widgetAdhkarTime">Ochtend</span>
+          </div>
+          <p class="widget__body" data-i18n="widgetAdhkarText">
+            “O Allah, ik vraag U om welzijn in deze wereld en het Hiernamaals.”
+          </p>
+        </div>
+        <div class="glass widget">
+          <div class="widget__header">
+            <h3 data-i18n="widgetHadithTitle">Hadith van het moment</h3>
+            <span class="material-symbols-outlined">auto_stories</span>
+          </div>
+          <p class="widget__body" data-i18n="widgetHadithText">
+            “De beste onder jullie zijn degenen die het beste zijn voor hun families.”
+          </p>
+        </div>
+        <div class="glass widget">
+          <div class="widget__header">
+            <h3 data-i18n="widgetWeatherTitle">Live weerbericht</h3>
+            <span class="badge">20°C</span>
+          </div>
+          <div class="weather">
+            <span class="material-symbols-outlined">partly_cloudy_day</span>
+            <p data-i18n="widgetWeatherText">Lichte bewolking boven je locatie.</p>
+          </div>
+        </div>
+        <div class="glass widget">
+          <div class="widget__header">
+            <h3 data-i18n="widgetRamadanTitle">Ramadan modus</h3>
+            <span class="material-symbols-outlined">star</span>
+          </div>
+          <p class="widget__body" data-i18n="widgetRamadanText">
+            Suhoor eindigt over 00:22:10. Iftar over 12:48:05.
+          </p>
+          <div class="progress">
+            <div class="progress__bar" style="width: 68%"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass list-section">
+        <div>
+          <h2 data-i18n="quranModesTitle">Qur'an speler modi</h2>
+          <p data-i18n="quranModesLead">
+            Drie visuele ervaringen: Focus, Surah en Audio — allemaal gekoppeld aan dynamische vertalingen.
+          </p>
+        </div>
+        <div class="modes">
+          <div>
+            <h4 data-i18n="modeFocusTitle">Focus</h4>
+            <p data-i18n="modeFocusDesc">Groot vers, vertaling en fonetiek voor diepe concentratie.</p>
+          </div>
+          <div>
+            <h4 data-i18n="modeSurahTitle">Surah</h4>
+            <p data-i18n="modeSurahDesc">Scrolbare ayah-cards met snelle navigatie.</p>
+          </div>
+          <div>
+            <h4 data-i18n="modeAudioTitle">Audio</h4>
+            <p data-i18n="modeAudioDesc">Minimalistische equalizer en een rustige achtergrond.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div>
+          <h3>Menara</h3>
+          <p data-i18n="footerText">Verbind wereldwijd met spirituele ritmes, waar je ook bent.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footerQuick">Snelmenu</h4>
+          <ul>
+            <li data-i18n="footerLink1">Gebedstijden</li>
+            <li data-i18n="footerLink2">Qur'an speler</li>
+            <li data-i18n="footerLink3">Ramadan modus</li>
+            <li data-i18n="footerLink4">Instellingen</li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footerSupport">Support</h4>
+          <ul>
+            <li data-i18n="footerSupport1">Contact</li>
+            <li data-i18n="footerSupport2">Privacy</li>
+            <li data-i18n="footerSupport3">Updates</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__legal">© 2024 Menara. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
